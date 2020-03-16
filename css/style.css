@@ -1,0 +1,127 @@
+:root{
+    --fundo: white;
+    --texto: #373737;
+    --light: #FFFFFF;
+    --shadow: #C7D2DB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    color: var(--texto);
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+img{
+    width: 100%;
+}
+
+.btn{
+    padding: 1em 1em;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: -2em;
+}
+
+.pesquisa {
+    display: block;
+}
+.rounded{
+    border-radius: 0.7em;
+}
+
+.shadow{
+    box-shadow: 6px 6px 10px var(--shadow) , -6px -6px 10px var(--light);
+}
+
+.inner, shadow:hover, shadow:active{
+    box-shadow: inset 6px 6px 10px var(--light), inset -6px -6px 10px var(--shadow);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #FFC60C;
+}
+.amarelo {
+    background: #FFC60C;
+}
+
+header img{
+    width: 120px;
+    filter: drop-shadow( 1px 1px 2px rgba( 255, 194, 14, 0.5 ));
+}
+
+.lupa {
+    margin: 0;
+    padding: -2em;
+    width: 25px;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+.menu {
+    margin: 0;
+    width: 25px;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+
+#menu{
+    background-color: var(--fundo);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 2em 3em;
+    display: none;
+}
+
+#menu li{
+    list-style: none;
+    padding: 10px 10em 10px 0; /* topo, direita, baixo, esquerda*/
+}
+
+
+.card img{
+    margin-top: 8px;
+    box-shadow: 6px 6px 10px var(--shadow) , -6px -6px 10px var(--light);
+}
+
+.border-bottom p{
+   list-style-type: none;
+   text-align: center;
+   margin-top: 60px;
+   font-size: 20px;
+}
+
+.border-bottom {
+    border-bottom: solid 2px black;
+    width: 300px;
+    margin: auto;
+}
+
+.bloco input {
+    width: 100px;
+    height: 500px;
+}

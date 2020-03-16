@@ -3,10 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Esportes Radicais</title>
     <link rel="stylesheet" href="css/style.css">
+    <script></script>
 </head>
 <body>
+    <div class="amarelo">
+
+    <header class="container">
+        <div href="#" class="btn circle shadow " onclick="btnMenu()"><img src="img/open-menu.svg" alt="" class="menu"></div>
+        <a href="index.html" title="acessar a home">
+            <img src="img/Logo Esportes Radicais.png" alt="Logo do Site Esportes Radicais">
+        </a>
+        <div href="#" class="btn circle shadow pesquisa" title="clique para pesquisar no site">
+            <img src="img/Lupa Esportes Radicais.png" alt="" class="lupa">
+        </div>
+        
+        <nav id="menu">
+            <ul class="ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+                <li><a href="#">Lugares</a></li>
+                <li><a href="#">Campeonatos</a></li>
+                <li><a href="#">Comunidade</a></li>
+            </ul>
+        </nav>
+ </header>
+</div>
+
+<section class="comunidade">
+    <div class="border-bottom">
+        <p>COMUNIDADE</p>
+    </div>
+
+    <div class="bloco">
+        <form action=""><input type="text"></form>
+        <p>Digite Algo:</p>
+    </div>
+
+</section>
+
+    <footer class="shadow">
+
+    <script>
+        function btnMenu(){
+
+            var menu = document.getElementById("menu");
+
+            if(menu.style.display == "none"){
+                menu.style.display = "block";
+            }else{
+                menu.style.display = "none";
+            }            
+        }
+    </script>
+    </footer>
+
+
+</body>
+</html>
     
 </body>
 </html>
