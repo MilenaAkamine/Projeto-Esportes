@@ -1,0 +1,148 @@
+:root{
+    --Yellow: #ffc60c;
+    --Black:  #000000;
+    --white:   #ffffff;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+header{
+    background-color: var(--Yellow);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 460px;
+}
+header .fa-bars{
+    color: var(--purple);
+    font-size: 3em;
+    display: block;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container div a{
+    margin-left: 2em;
+    margin: 0 auto;
+}
+header .container img{
+    width: 20%;
+    
+}
+
+#menu{
+    position: absolute;
+    top: 5.5em;
+    width: 100%;
+    background-color: var(--Yellow);
+    left: 0;
+    display: none;
+    
+}
+#menu ul{
+    flex-direction: column;
+    height: 200px;
+    margin-left: 1em;
+    list-style-type: none;
+}
+#menu a{
+    padding: 0.5em 0;
+    display: block;
+    text-decoration: black;
+}
+main{
+    background-image: url(../img/bike.jpg);
+}
+
+main .container img{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+}
+main .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.campo{
+    height: 80px;
+    margin: auto;
+}
+
+input[type="text"]{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px var(--Black);
+    
+}
+::placeholder{
+    color: #ffffff;
+}
+.campo1{
+    border: var(--Black);
+    background-color: var(--white);
+    opacity: 20%;
+    text-align: center;
+}
+.campo1 a{
+    text-decoration: black;
+}
+footer{
+    background-color: yellow;
+    
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.Inicio img{
+    width: 12%;
+}
+.Inicio ul{
+    list-style: none;
+}
+.Inicio a{
+    font-size: 0.7em;
+}
+.Meio{
+    font-size: 0.4em;
+    margin: auto;
+    display: flex;
+}
+footer form{
+    display: flex;
+}
+footer form input{
+    height: 3em;
+    width: 5em;
+    outline: none;
+    margin-right: -5px;
+    padding: 1px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 0.68em 2em;
+    cursor: pointer;
+    width: 2em;
+    height: 3em;
+}
