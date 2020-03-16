@@ -62,46 +62,7 @@ header .container img{
     display: block;
     text-decoration: black;
 }
-main{
-    background-image: url(../img/bike.jpg);
-}
 
-main .container img{
-    width: 150px;
-    height: 150px;
-    align-items: center;
-}
-main .container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
-.campo{
-    height: 80px;
-    margin: auto;
-}
-
-input[type="text"]{
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-bottom: solid 1px var(--Black);
-    
-}
-::placeholder{
-    color: #ffffff;
-}
-.campo1{
-    border: var(--Black);
-    background-color: var(--white);
-    opacity: 20%;
-    text-align: center;
-}
-.campo1 a{
-    text-decoration: black;
-}
 footer{
     background-color:var(--Yellow);
     height: 120px;
