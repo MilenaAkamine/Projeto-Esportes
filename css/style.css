@@ -103,46 +103,79 @@ input[type="text"]{
     text-decoration: black;
 }
 footer{
-    background-color: yellow;
+    background-color:var(--Yellow);
+    height: 120px;
     
 }
 footer .container{
     display: flex;
-    justify-content: space-between;
+    height: 100px;
     align-items: center;
+    justify-content: space-between;
+
     
     
+}
+.Inicio{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+     
 }
 .Inicio img{
-    width: 12%;
+    width: 32%;
 }
-.Inicio ul{
-    list-style: none;
-}
+
 .Inicio a{
     font-size: 0.7em;
 }
-.Meio{
-    font-size: 0.4em;
-    margin: auto;
-    display: flex;
+
+.meio p{
+    color: var(--Black);
+    font-size: 0.7em;
 }
 footer form{
     display: flex;
 }
 footer form input{
-    height: 3em;
-    width: 5em;
+    
+    width: 7.3em;
     outline: none;
+    border: none;
     margin-right: -5px;
     padding: 1px;
+    height: 1em;
 }
-.btn{
+.botão{
     text-decoration: none;
     color: white;
     border: none;
     padding: 0.68em 2em;
     cursor: pointer;
-    width: 2em;
-    height: 3em;
+    height: 1.98em;
+    font-size: 8px;
+}
+.sociais{
+    display: flex;
+    justify-content: space-around;
+}
+footer p{
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 0.5em;
+}
+@media(max-width:800px){
+    .container{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 5em;
+        display: block;
+    }
+}
+@media(max-width:1366px){
+        
 }
