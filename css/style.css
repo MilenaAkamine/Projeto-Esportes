@@ -4,6 +4,66 @@
 }
 
 
+header{
+    background-color: #ffc60f;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 460px;
+}
+header .fa-bars{
+    color: #000000;
+    font-size: 2.2em;
+    display: block;
+    
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container div a{
+    margin-left: 2em;
+    margin: 0 auto;
+    text-decoration: none;
+}
+header .container img{
+    width: 25%;
+
+}
+
+#menu{
+    position: absolute;
+    top: 5.5em;
+    width: 100%;
+    background-color: #ffc60f;
+    left: 0;
+    display: none;
+    padding: 0px 145px;
+
+}
+#menu ul{
+    flex-direction: column;
+    height: 200px;
+    margin-left: 1em;
+    list-style-type: none;
+}
+#menu a{
+    padding: 0.5em 0;
+    display: block;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.fa-search:before {
+    font-size: 2em;
+}
 
 main h1{
     text-decoration: underline black;
@@ -42,28 +102,116 @@ main h1{
     line-height: normal;
 }
 
+footer{
+    background-color:#ffc60c;
+    height: 120px;
+
+}
+footer .container{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+
+
+}
+.Inicio{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+
+}
+.Inicio img{
+    width: 32%;
+}
+
+.Inicio a{
+    font-size: 0.7em;
+}
+
+.meio p{
+    color: var(--Black);
+    font-size: 0.7em;
+}
+footer form{
+    display: flex;
+}
+footer form input{
+
+    width: 7.3em;
+    outline: none;
+    border: none;
+    margin-right: -5px;
+    padding: 1px;
+    height: 1em;
+}
+
+
+.botão{
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 0.68em 2em;
+    cursor: pointer;
+    height: 1.98em;
+    font-size: 8px;
+    background-color: #6f6f6f;
+}
+.sociais{
+    display: flex;
+    justify-content: space-around;
+}
+footer p{
+    color: #6f6f6f;
+    font-size: 1em;
+}
+
 @media (min-width:460px){
     
-main h1{
-        font-size: 40px;
+    main h1{
+            font-size: 40px;
+        }
+        
+    .selecione{
+            margin-left:27%;
+            font-size: 27px;
     }
-    
-.selecione{
-        margin-left:25%;
-        font-size: 27px;
+
+    .localiza{
+        margin-left: 15%;
+
+    }
+
+    .localiza h2{
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 27px;
+    }
+
+    .juntar{
+        margin-top: 10px;
+    }
+    .Inicio img{
+       width: 55%;
+    }
+    .Inicio a{
+        font-size: 1em;
+    }
+
+    .meio p {
+        font-size: 1em;
+    }
+    .email{
+
+        
+        margin-top: 0.1em;
+    }
+    .sociais{
+        margin-top: 0.7em;
+        font-size: 1.7em;
+    }
+
 }
 
-.localiza{
-    margin-left: 25%;
 
-}
-
-.localiza h2{
-    font-size: 20px;
-}
-
-       
-}
-
-
-    
