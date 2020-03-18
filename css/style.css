@@ -137,6 +137,52 @@ footer p{
         display: block;
     }
 }
-@media(max-width:1366px){
+@media(min-width:1366px){
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        header .container{
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        header img{
+            width: 20%;
+            justify-content: flex-start;
+        }
+        #menu{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            background-color: transparent;
+            top: 2.5em;
+            
+        }
+        header #menu ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-flow: wrap;
+        }
+        #menu a{
+            display: flex;
+            padding: 3em;
+            color: black;
+            
+            
+            
+        }
+        header nav{
+            width: 60%;
+        }
+        
+        header .container div{
+            display: none;
+        }
         
 }
+
