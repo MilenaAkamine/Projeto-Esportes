@@ -2,6 +2,189 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --Yellow: #ffc60c;
+    --Black:  #000000;
+    --white:   #ffffff;
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/*Header e Footer Comeco*/
+header{
+    background-color: var(--Yellow);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 460px;
+}
+header .fa-bars{
+    color: var(--purple);
+    font-size: 3em;
+    display: block;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container div a{
+    margin-left: 2em;
+    margin: 0 auto;
+}
+header .container img{
+    width: 20%;
+    
+}
+
+#menu{
+    position: absolute;
+    top: 5.5em;
+    width: 100%;
+    background-color: var(--Yellow);
+    left: 0;
+    display: none;
+    
+}
+#menu ul{
+    flex-direction: column;
+    height: 200px;
+    margin-left: 1em;
+    list-style-type: none;
+}
+#menu a{
+    padding: 0.5em 0;
+    display: block;
+    text-decoration: black;
+}
+
+footer{
+    background-color:var(--Yellow);
+    height: 120px;
+    
+}
+footer .container{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    
+}
+.Inicio{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+     
+}
+.Inicio img{
+    width: 32%;
+}
+
+.Inicio a{
+    font-size: 0.7em;
+}
+
+.meio p{
+    color: var(--Black);
+    font-size: 0.7em;
+}
+footer form{
+    display: flex;
+}
+footer form input{
+    
+    width: 7.3em;
+    outline: none;
+    border: none;
+    margin-right: -5px;
+    padding: 1px;
+    height: 1em;
+}
+.botão{
+    text-decoration: none;
+    color: white;
+    border: none;
+    padding: 0.68em 2em;
+    cursor: pointer;
+    height: 1.98em;
+    font-size: 8px;
+}
+.sociais{
+    display: flex;
+    justify-content: space-around;
+}
+footer p{
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 0.5em;
+}
+@media(max-width:800px){
+    .container{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 5em;
+        display: block;
+    }
+}
+@media(min-width:1366px){
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        header .container{
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        header img{
+            width: 20%;
+            justify-content: flex-start;
+        }
+        #menu{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            background-color: transparent;
+            top: 2.5em;
+            
+        }
+        header #menu ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-flow: wrap;
+        }
+        #menu a{
+            display: flex;
+            padding: 3em;
+            color: black;
+            
+            
+            
+        }
+        header nav{
+            width: 60%;
+        }
+        
+        header .container div{
+            display: none;
+        }
+        
+}
+/*header e footer completo*/
 
 
 
