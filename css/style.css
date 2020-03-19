@@ -61,7 +61,7 @@ header .container img{
     display: flex;
 }
 #menu a{
-    padding: 0.5 0;
+    padding: 0.5em 0;
     display: block;
     color: black;
     text-decoration: none;
@@ -88,7 +88,7 @@ main .container{
 
 input[type="text"]{
     width: 100%;
-    background-color:var(--white) ;
+    background-color: transparent;
     opacity: 30%;
     border: none;
     outline: none;
@@ -96,7 +96,7 @@ input[type="text"]{
     
 }
 ::placeholder{
-    color: var(--Black);
+    color: var(--white);
     text-align: center;
 }
 .campo1{
@@ -106,7 +106,8 @@ input[type="text"]{
     text-align: center;
 }
 .campo1 a{
-    text-decoration: black;
+    color: black;
+    
 }
 footer{
     background-color:var(--Yellow);
@@ -173,6 +174,7 @@ footer p{
     color: #6f6f6f;
     font-size: 0.5em;
 }
+
 @media(max-width:800px){
     .container{
         max-width: 800px;
@@ -197,6 +199,9 @@ footer p{
     
 }
 @media(min-width:1366px){
+    header{
+        height: 200px;
+    }
     .container{
         width: 80%;
         margin: 0 auto;
@@ -242,5 +247,28 @@ footer p{
     header .container div{
         display: none;
     }
+    main{
+        background-image: url(../img/skatista.png);
+        height: 500px;
+    }
+    main .container{
+        flex-direction: row;
+    }
+    main .container img{
+        width: 400px;
+        height: 400px;
+        
+    }
+    .campo{
+        width: 500px;
+        
+    }
+    ::placeholder{
+        text-transform: uppercase;
+        height: 2em;
+        color: #000000;
+    }
+
+    
     
 }
