@@ -215,3 +215,101 @@ footer p{
 }
 
 
+
+@media(min-width: 800px){
+
+
+header{
+    height: 200px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+header .container img{
+    width: 15%;
+}
+header .container{
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header img{
+    width: 15%;
+    justify-content: flex-start;
+    
+
+}
+#menu{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    background-color: transparent;
+    top: 2.5em;
+
+
+}
+header #menu ul{
+display: flex;
+list-style-type: none;
+justify-content: space-between;
+flex-flow: wrap;
+}
+#menu a{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    margin-top: 29px;
+
+
+
+}
+header nav{
+    width: 60%;
+}
+
+header .container div{
+    display: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.selecione{
+    margin-left: 25em;
+    font-size: 30px;
+}
+ .selecione select{
+     font-size: 0.6em;
+ } 
+
+ 
+ .localizacoes{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+ .localiza{
+     max-width: 40%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+}
+
