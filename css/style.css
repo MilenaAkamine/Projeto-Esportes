@@ -174,7 +174,9 @@ footer p{
     color: #6f6f6f;
     font-size: 0.5em;
 }
-
+.imagem1{
+    display: none;
+}
 @media(max-width:800px){
     .container{
         max-width: 800px;
@@ -267,6 +269,12 @@ footer p{
         text-transform: uppercase;
         height: 2em;
         color: #000000;
+    }
+    .imagem{
+        display: none;
+    }
+    .imagem1{
+        display: inline;
     }
 
     
