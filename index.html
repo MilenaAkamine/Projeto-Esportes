@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,118 @@
     <link rel="stylesheet" href="css/style.css">
     <script></script>
 </head>
+
 <body>
-    <div class="amarelo">
-
-    <header class="container">
-        <div href="#" class="btn circle shadow " onclick="btnMenu()"><img src="img/open-menu.svg" alt="" class="menu"></div>
-        <a href="index.html" title="acessar a home">
-            <img src="img/Logo Esportes Radicais.png" alt="Logo do Site Esportes Radicais">
-        </a>
-        <div href="#" class="btn circle shadow pesquisa" title="clique para pesquisar no site">
-            <img src="img/Lupa Esportes Radicais.png" alt="" class="lupa">
-        </div>
-        
-        <nav id="menu">
-            <ul class="ul">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Cadastre-se</a></li>
-                <li><a href="#">Lugares</a></li>
-                <li><a href="#">Campeonatos</a></li>
-                <li><a href="#">Comunidade</a></li>
-            </ul>
-        </nav>
- </header>
-</div>
-
-<section class="comunidade">
-    <div class="border-bottom">
-        <p>COMUNIDADE</p>
-    </div>
-
-    <div class="bloco">
-        <form action=""><input type="text"></form>
-        <p>Digite Algo:</p>
-    </div>
-
-</section>
-
-    <footer class="shadow">
-
-    <script>
-        function btnMenu(){
-
-            var menu = document.getElementById("menu");
-
-            if(menu.style.display == "none"){
-                menu.style.display = "block";
-            }else{
-                menu.style.display = "none";
-            }            
-        }
-    </script>
-    </footer>
-
-
-</body>
-</html>
     
+
+        <header class="container">
+            <div href="#" class="btn circle shadow" onclick="btnMenu()"><img src="img/open-menu.svg" alt="menu do site"
+                    class="menu"></div>
+            <a href="index.html" title="acessar a home"></a>
+            <img src="img/Logo Esportes Radicais.png" alt="Logo do site Esportes Radicais">
+            <i class="fas fa-bars"></i>
+            </a>
+
+            <div href="#" class="btn circle shadow pesquisa" title="clique para pesquisa do site">
+                <img src="img/Lupa Esportes Radicais.png" alt="Lupa do site Esportes Radicais" class="lupa">
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Cadastre-se</a></li>
+                    <li><a href="#">Lugares</a></li>
+                    <li><a href="#">Campeonatos</a></li>
+                    <li><a href="#">Cominidade</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="amarelo">
+            <section class="comunidade">
+                <div class="border-bottom">
+                    <p class="p.texto">COMUNIDADE</p>
+                </div>
+            </section>
+
+            <div class="bloco">
+                <form action=""><input placeholder="Digite Algo:" class="form"></form>
+            </div>
+
+
+            <section class="redes_sociais">
+                <div class="border">
+                    <p class="sociais">NOSSAS REDES SOCIAIS</p>
+                    <img src="img/Redes Sociais - Esportes Radicais.png" class="redes-sociais"
+                        alt="Redes Sociais do site Esportes Radicais">
+                </div>
+            </section>
+        </div>
+        </main>
+
+
+
+
+
+        <footer class="shadow">
+            <div class="container">
+                <div class="Inicio">
+
+                    <img src="img/Logo Esportes Radicais.png" alt="Logo Radical Flat" class="logo_RF">
+                    <a>Gmail:RadicalFlat@gmail.com</a>
+
+
+                </div>
+                <div class="meio">
+                    <p>Tel: 11 96544-9874</p>
+                </div>
+
+                <div>
+                    <form action="" method="get">
+                        <div>
+                            <input type="email" id="email" name="email_usuario">
+                            <button type="submit" class="botão">ENVIAR</button>
+                        </div>
+
+                    </form>
+                    <div class="sociais">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <p class="politica">® COPYRIGHT - Todos os direitos reservados - SENAI de Informática</p>
+
+
+        </footer>
+        <script>
+            function botaoMenu() {
+                var m = document.getElementById("menu");
+                if (m.style.display == "block") {
+                    m.style.display = "none"
+                } else {
+                    m.style.display = "block";
+                }
+            }
+        </script>
+
+        <script>
+            function botaoMenu() {
+                var m = document.getElementById("menu");
+                if (m.style.display == "block") {
+                    m.style.display = "none"
+                } else {
+                    m.style.display = "block";
+                }
+            }
+        </script>
+
 </body>
-</html>
+
+</html
