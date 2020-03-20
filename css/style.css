@@ -9,8 +9,8 @@
 
 }
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font: var(--Black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,
+    var(--Black);
 }
 /*Header e Footer Comeco*/
 header{
@@ -188,19 +188,61 @@ footer p{
         
 }
 /*header e footer completo*/
+main{
+    background-color: #b4b4b4cb;
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    width: 80%;
+}
 .imagem{
-    background-image: url(../img/chorao-skate.jpg);
+    background-image: url(../img/sunlight-snow-winter-snowboard-mountains-hd-1080P-wallpaper.jpg);
     height: 200px;
 }
 .imagem h2{
-    padding: 0em;
+    padding: 4em 0;
 }
 .item{
     text-align: center;
     color: black;
     text-decoration: black;
 }
+.item a{
+    color: var(--Black);
+}
 main .container img{
     width: 40px;
     height: 40px;
+}
+.Para_Cadastro{
+    display: flex;
+    align-self:center ;
+    
+}
+main .container section .card img{
+    width: 40%;
+    height: 40%;
+}
+.Recomendacoes{
+    background-color: #ffffff;
+
+}
+.Recomendacoes div img{
+    width: 25%;
+    height: 25%;
+}
+.Cards{
+    display: flex;
+    box-shadow: -2px -3px 10px
+}
+.Cards div{
+    flex-direction: column;
+}
+.yellow{
+    color: var(--Yellow);
+}
+.card1{
+    display: none;
 }
