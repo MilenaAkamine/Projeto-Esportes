@@ -1,118 +1,193 @@
-:root{
-    --fundo: white;
-    --texto: #373737;
-    --light: #FFFFFF;
-    --shadow: #C7D2DB;
-}
-
 *{
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    margin: 0;
 }
+:root{
+    --Yellow: #ffc60c;
+    --Black:  #000000;
+    --white:   #ffffff;
 
+}
 body{
-    background-color: var(--fundo);
-    color: var(--texto);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 100%;
-    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,
+    var(--Black);
 }
-
-a{
-    color: var(--texto);
-    text-decoration: none;
-    font-size: 1.4em;
+/*Header e Footer Comeco*/
+header{
+    background-color: var(--Yellow);
 }
-
-img{
-    width: 100%;
-}
-
-.btn{
-    padding: 1em 1em;
-}
-
-.circle{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: -2em;
-}
-
-.pesquisa {
-    display: block;
-}
-.rounded{
-    border-radius: 0.7em;
-}
-
-.shadow{
-    box-shadow: 6px 6px 10px var(--shadow) , -6px -6px 10px var(--light);
-}
-
-.inner, shadow:hover, shadow:active{
-    box-shadow: inset 6px 6px 10px var(--light), inset -6px -6px 10px var(--shadow);
-}
-
 .container{
     width: 80%;
     margin: 0 auto;
+    max-width: 460px;
 }
-
-.btn circle shadow{
-    display: none;
+header .fa-bars{
+    color: var(--purple);
+    font-size: 3em;
+    display: block;
 }
-
-header{
+header .container{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 80px;
-    background-color: #FFC60C;
-}
-.amarelo {
-    background: #FFC60C;
+    align-items: center;
 }
 
-header img{
-    width: 120px;
-    filter: drop-shadow( 1px 1px 2px rgba( 255, 194, 14, 0.5 ));
+header .container div a{
+    margin-left: 2em;
+    margin: 0 auto;
 }
-
-.lupa {
-    margin: 0;
-    padding: -2em;
-    width: 25px;
-    margin-left: -3px;
-    margin-top: -3px;
-}
-.menu {
-    margin: 0;
-    width: 25px;
-    margin-left: -3px;
-    margin-top: -3px;
+header .container img{
+    width: 20%;
+    
 }
 
 #menu{
-    background-color: var(--fundo);
     position: absolute;
-    top: 80px;
+    top: 5.5em;
+    width: 100%;
+    background-color: var(--Yellow);
     left: 0;
-    padding: 2em 3em;
     display: none;
+    
+}
+#menu ul{
+    flex-direction: column;
+    height: 200px;
+    margin-left: 1em;
+    list-style-type: none;
+}
+#menu a{
+    padding: 0.5em 0;
+    display: block;
+    text-decoration: none;
+    
 }
 
-#menu li{
-    list-style: none;
-    padding: 10px 10em 10px 0; /* topo, direita, baixo, esquerda*/
+footer{
+    background-color:var(--Yellow);
+    height: 120px;
+    
+}
+footer .container{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    
+}
+.Inicio{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+     
+}
+.Inicio img{
+    width: 32%;
 }
 
-
-.card img{
-    margin-top: 8px;
-    box-shadow: 6px 6px 10px var(--shadow) , -6px -6px 10px var(--light);
+.Inicio a{
+    font-size: 0.7em;
+    color: var(--Black);
 }
+
+.meio p{
+    color: var(--Black);
+    font-size: 0.7em;
+}
+footer form{
+    display: flex;
+}
+footer form input{
+    
+    width: 7.3em;
+    outline: none;
+    border: none;
+    margin-right: -5px;
+    padding: 1px;
+    height: 1em;
+}
+.botão{
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 0.68em 2em;
+    cursor: pointer;
+    height: 1.98em;
+    font-size: 8px;
+    background-color: #6f6f6f;
+}
+.sociais{
+    display: flex;
+    justify-content: space-around;
+}
+footer p{
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 0.5em;
+}
+@media(min-width:800px){
+    .container{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 5em;
+        display: block;
+    }
+}
+@media(min-width:1366px){
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        header .container{
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        header img{
+            width: 20%;
+            justify-content: flex-start;
+        }
+        #menu{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            background-color: transparent;
+            top: 2.5em;
+            
+        }
+        header #menu ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-flow: wrap;
+        }
+        #menu a{
+            display: flex;
+            padding: 4em;
+            color: black;
+            
+            
+            
+        }
+        header nav{
+            width: 60%;
+        }
+        
+        header .container div{
+            display: none;
+        }
+        
+}
+/*header e footer completo*/
 
 .comunidade{
     background-color: white;
@@ -184,237 +259,26 @@ header img{
     background-color: white;
 }
 
-.footer{
-    background-color: #FFC60C;
-    margin-bottom: 1000px;
-}
 
 .logo_RF{
     justify-content: end;
     width: 4em;
     margin-bottom: 2px;
 }
+@media(min-width:800px){
 
-
-
-
-        @media(max-width:1366px){ 
-        @media(min-width:1366px){ 
-
-       }
-
-}
-
-
-
-
-*{
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-:root{
-    --Yellow: #ffc60c;
-    --Black:  #000000;
-    --white:  #ffffff;
-
-}
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-header{
-    background-color: var(--Yellow);
-}
-
-.container{
-    width: 80%;
-    margin: 0 auto;
-    max-width: 460px;
-}
-
-header .fa-bars{
-    color: var(--purple);
-    font-size: 3em;
-    display: block;
-}
-
-.btn circle shadow{
-    display: none;
-}
-
-
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .container div a{
-    margin-left: 2em;
-    margin: 0 auto;
-}
-
-header .container img{
-    width: 20%;
-}
-
-#menu{
-    position: absolute;
-    top: 5.5em;
-    width: 100%;
-    background-color: var(--Yellow);
-    left: 0;
-    display: none;
-}
-
-#menu ul{
-    flex-direction: column;
-    height: 200px;
-    margin-left: 1em;
-    list-style-type: none;
-}
-
-#menu a{
-    padding: 0.5em 0;
-    display: block;
-    text-decoration: black;
-}
-
-footer{
-    background-color:var(--Yellow);
-    height: 120px;
-}
-
-footer .container{
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.Inicio{
-    display: flex;
-    flex-direction: column;
-    max-width: 150px;
-}
-
-.Inicio img{
-    width: 32%;
-}
-
-.Inicio a{
-    font-size: 0.7em;
-}
-
-.meio p{
-    color: var(--Black);
-    font-size: 1em;
-}
-
-footer form{
-    display: flex;
-}
-
-footer form input{
-    
-    width: 7.3em;
-    outline: none;
-    border: none;
-    margin-right: -5px;
-    padding: 1px;
-    height: 1em;
-}
-
-.botão{
-    text-decoration: none;
-    color: black;
-    border: none;
-    padding: 0.68em 2em;
-    cursor: pointer;
-    height: 1.98em;
-    font-size: 8px;
-    background-color: #6f6f6f;
-}
-
-.sociais{
-    display: flex;
-    justify-content: space-around;
-}
-
-.politica{
-    font-size: 15px;
-}
-
-footer p{
-    text-align: center;
-    color: #6f6f6f;
-    font-size: 0.5em;
-}
-
-@media(max-width:800px){
-    .container{
-        max-width: 800px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    header .fa-bars{
-        color: var(--purple);
-        font-size: 5em;
-        display: block;
-    }
 }
 @media(min-width:1366px){
-        .container{
-            width: 80%;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
 
-        header .container{
-            display: flex;
-            padding: 20px 0;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header img{
-            width: 20%;
-            justify-content: flex-start;
-        }
-
-        #menu{
-            display: flex;
-            position: relative;
-            justify-content: space-between;
-            background-color: transparent;
-            top: 2.5em;
-        }
-
-        header #menu ul{
-        display: flex;
-        list-style-type: none;
-        justify-content: space-between;
-        flex-flow: wrap;
-        }
-
-        #menu a{
-            display: flex;
-            padding: 3em;
-            color: black;
-        }
-
-        header nav{
-            width: 60%;
-        }
-        
-        header .container div{
-            display: none;
-        }
-
-        .gmail{
-            font-size: large;
-        }
-        
 }
+
+
+
+  
+
+
+
+
+
+
+

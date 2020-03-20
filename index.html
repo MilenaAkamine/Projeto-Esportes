@@ -5,36 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esportes Radicais</title>
+    <script src="https://kit.fontawesome.com/bd368fed0b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+
     <script></script>
 </head>
 
 <body>
     
 
-        <header class="container">
-            <div href="#" class="btn circle shadow" onclick="btnMenu()"><img src="img/open-menu.svg" alt="menu do site"
-                    class="menu"></div>
-            <a href="index.html" title="acessar a home"></a>
-            <img src="img/Logo Esportes Radicais.png" alt="Logo do site Esportes Radicais">
-            <i class="fas fa-bars"></i>
-            </a>
+    <header>
+        <div class="container">
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
 
-            <div href="#" class="btn circle shadow pesquisa" title="clique para pesquisa do site">
-                <img src="img/Lupa Esportes Radicais.png" alt="Lupa do site Esportes Radicais" class="lupa">
             </div>
-
+            <img src="img/Logo.png" alt="Logo do Radical Flat">
             <nav id="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Cadastre-se</a></li>
-                    <li><a href="#">Lugares</a></li>
-                    <li><a href="#">Campeonatos</a></li>
-                    <li><a href="#">Cominidade</a></li>
+                    <li><a href="Cadastro.html">Cadastrar-se</a></li>
+                    <li><a href="#">Locais</a></li>
+                    <li><a href="#">Comunidade</a></li>
                 </ul>
+
             </nav>
-        </header>
+            <i class="fas fa-search"></i>
+
+        </div>
+
+    </header>
         <main>
             <div class="amarelo">
             <section class="comunidade">
@@ -94,20 +97,11 @@
 
 
             </div>
-            <p class="politica">® COPYRIGHT - Todos os direitos reservados - SENAI de Informática</p>
+            <p>® COPYRIGHT - Todos os direitos reservados - SENAI de Informática</p>
 
 
         </footer>
-        <script>
-            function botaoMenu() {
-                var m = document.getElementById("menu");
-                if (m.style.display == "block") {
-                    m.style.display = "none"
-                } else {
-                    m.style.display = "block";
-                }
-            }
-        </script>
+        
 
         <script>
             function botaoMenu() {
