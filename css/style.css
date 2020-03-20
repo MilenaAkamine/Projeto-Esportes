@@ -15,6 +15,8 @@ body{
     background-color: var(--fundo);
     color: var(--texto);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 30px;
 }
 
 a{
@@ -56,6 +58,10 @@ img{
 .container{
     width: 80%;
     margin: 0 auto;
+}
+
+.btn circle shadow{
+    display: none;
 }
 
 header{
@@ -108,20 +114,307 @@ header img{
     box-shadow: 6px 6px 10px var(--shadow) , -6px -6px 10px var(--light);
 }
 
+.comunidade{
+    background-color: white;
+}
+
 .border-bottom p{
    list-style-type: none;
    text-align: center;
    margin-top: 60px;
    font-size: 20px;
+   background-color: white;
 }
 
 .border-bottom {
     border-bottom: solid 2px black;
     width: 300px;
     margin: auto;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
-.bloco input {
-    width: 100px;
-    height: 500px;
+.p.texto{
+    margin-bottom: 60px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.bloco input{
+    width: 800px;
+    height: 300px;
+}
+
+.form{
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    list-style-type: none;
+}
+
+::placeholder{
+    text-align: start;
+    background-color: white;
+}
+
+.bloco{
+    border: medium;
+}
+
+.border{
+    border-bottom: solid 2px black;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+.sociais{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+}
+
+.redes-sociais{
+    width: 100%;
+    height: 75px;
+    justify-content: center;
+    background-color: white;
+}
+
+.footer{
+    background-color: #FFC60C;
+    margin-bottom: 1000px;
+}
+
+.logo_RF{
+    justify-content: end;
+    width: 4em;
+    margin-bottom: 2px;
+}
+
+
+
+
+        @media(max-width:1366px){ 
+        @media(min-width:1366px){ 
+
+       }
+
+}
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+:root{
+    --Yellow: #ffc60c;
+    --Black:  #000000;
+    --white:  #ffffff;
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: var(--Yellow);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 460px;
+}
+
+header .fa-bars{
+    color: var(--purple);
+    font-size: 3em;
+    display: block;
+}
+
+.btn circle shadow{
+    display: none;
+}
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container div a{
+    margin-left: 2em;
+    margin: 0 auto;
+}
+
+header .container img{
+    width: 20%;
+}
+
+#menu{
+    position: absolute;
+    top: 5.5em;
+    width: 100%;
+    background-color: var(--Yellow);
+    left: 0;
+    display: none;
+}
+
+#menu ul{
+    flex-direction: column;
+    height: 200px;
+    margin-left: 1em;
+    list-style-type: none;
+}
+
+#menu a{
+    padding: 0.5em 0;
+    display: block;
+    text-decoration: black;
+}
+
+footer{
+    background-color:var(--Yellow);
+    height: 120px;
+}
+
+footer .container{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Inicio{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+}
+
+.Inicio img{
+    width: 32%;
+}
+
+.Inicio a{
+    font-size: 0.7em;
+}
+
+.meio p{
+    color: var(--Black);
+    font-size: 1em;
+}
+
+footer form{
+    display: flex;
+}
+
+footer form input{
+    
+    width: 7.3em;
+    outline: none;
+    border: none;
+    margin-right: -5px;
+    padding: 1px;
+    height: 1em;
+}
+
+.botão{
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 0.68em 2em;
+    cursor: pointer;
+    height: 1.98em;
+    font-size: 8px;
+    background-color: #6f6f6f;
+}
+
+.sociais{
+    display: flex;
+    justify-content: space-around;
+}
+
+.politica{
+    font-size: 15px;
+}
+
+footer p{
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 0.5em;
+}
+
+@media(max-width:800px){
+    .container{
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 5em;
+        display: block;
+    }
+}
+@media(min-width:1366px){
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        header .container{
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img{
+            width: 20%;
+            justify-content: flex-start;
+        }
+
+        #menu{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            background-color: transparent;
+            top: 2.5em;
+        }
+
+        header #menu ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-flow: wrap;
+        }
+
+        #menu a{
+            display: flex;
+            padding: 3em;
+            color: black;
+        }
+
+        header nav{
+            width: 60%;
+        }
+        
+        header .container div{
+            display: none;
+        }
+
+        .gmail{
+            font-size: large;
+        }
+        
 }
