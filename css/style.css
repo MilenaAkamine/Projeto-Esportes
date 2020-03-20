@@ -321,7 +321,30 @@ hr{
     width: 4em;
     margin-bottom: 2px;
 }
-
+@media(min-width:1366px){
+        .bloco input{
+        width:1200px ;
+}
+}
+@media(min-width:460px){
+    .bloco input{
+        width: 420px;
+        align-self: center;
+        display: flex;
+    }
+    .radical img{
+        width: 100px;
+        height: 300px;
+    }
+}
+@media(min-width:800px){
+    .bloco input{
+        width: 720px;
+    }
+    .radical img{
+        width: 200px;
+        height: 350px;
+    }
 
 
 
