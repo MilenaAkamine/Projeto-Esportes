@@ -1,0 +1,330 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --Yellow: #ffc60c;
+    --Black:  #000000;
+    --white:   #ffffff;
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*Header e Footer Comeco*/
+header{
+    background-color: var(--Yellow);
+}
+.container{
+    max-width: 460px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+header .fa-bars{
+    color: var(--purple);
+    font-size: 3em;
+    display: block;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container div a{
+    margin-left: 2em;
+    margin: 0 auto;
+}
+header .container img{
+    width: 20%;
+    
+}
+
+#menu{
+    position: absolute;
+    top: 5.5em;
+    width: 100%;
+    background-color: var(--Yellow);
+    left: 0;
+    display: none;
+    
+}
+#menu ul{
+    flex-direction: column;
+    height: 200px;
+    margin-left: 1em;
+    list-style-type: none;
+}
+#menu a{
+    padding: 0.5em 0;
+    display: block;
+    text-decoration: none;
+    color: black;
+    
+}
+
+footer{
+    background-color:var(--Yellow);
+    height: 120px;
+    
+}
+footer .container{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    
+}
+.Inicio{
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+     
+}
+.Inicio img{
+    width: 32%;
+}
+
+.Inicio a{
+    font-size: 0.7em;
+    color: var(--Black);
+}
+
+.meio p{
+    color: var(--Black);
+    font-size: 0.7em;
+}
+footer form{
+    display: flex;
+}
+footer form input{
+    
+    width: 7.3em;
+    outline: none;
+    border: none;
+    margin-right: -5px;
+    padding: 1px;
+    height: 1em;
+}
+.botão{
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 0.68em 2em;
+    cursor: pointer;
+    height: 1.98em;
+    font-size: 8px;
+    background-color: #6f6f6f;
+}
+.sociais{
+    display: flex;
+    justify-content: space-around;
+}
+footer p{
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 0.5em;
+}
+@media(min-width:800px){
+    .container{
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 5em;
+        display: block;
+    }
+}
+@media(min-width:1366px){
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        header .container{
+            display: flex;
+            padding: 20px 0;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        header img{
+            width: 20%;
+            justify-content: flex-start;
+        }
+        #menu{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            background-color: transparent;
+            top: 2.5em;
+            
+        }
+        header #menu ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex-flow: wrap;
+        }
+        #menu a{
+            display: flex;
+            padding: 4em;
+            color: black;
+            
+            
+            
+        }
+        header nav{
+            width: 60%;
+        }
+        
+        header .container div{
+            display: none;
+        }
+        
+}
+/*header e footer completo*/
+
+main{
+    background-color: #b4b4b4cb;
+}
+main .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    width: 80%;
+    margin: 0 auto;
+}
+.imagem{
+    background-image: url(../img/sunlight-snow-winter-snowboard-mountains-hd-1080P-wallpaper.jpg);
+    height: 200px;
+}
+.imagem h2{
+    padding: 5em 0;
+    font-size: 25px;
+}
+#myCarousel{
+    margin-top: 20px;
+    background-color: black;
+}
+.item{
+    text-align: center;
+    text-decoration: var(--white);
+    
+}
+.item a{
+    color: var(--white);
+}
+main .container img{
+    width: 40px;
+    height: 40px;
+}
+.Para_Cadastro{
+    display: flex;
+    align-self:center ;
+    
+}
+.card img{
+    width: 40%;
+    height: 40%;
+}
+.Recomendacoes{
+    background-color: #ffffff;
+
+}
+.Recomendacoes div img{
+    width: 25%;
+    height: 25%;
+}
+.Cards{
+    display: flex;
+    box-shadow: -2px -3px 10px
+}
+.Cards div{
+    flex-direction: column;
+}
+.yellow{
+    color: var(--Yellow);
+}
+.noticias, .Indicacoes{
+    padding: 0em 0em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+
+@media(min-width:800px){
+    
+    main .container{
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction:column;
+    }
+    .imagem{
+        background-image: url(../img/Paraquedas.jpg);
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+    .Indicacoes h3{
+        text-align: end;
+    }
+    .Recomendacoes div img{
+        width: 55%;
+        
+    }
+    .Para_Cadastro{
+        margin-top: 20px;
+    }
+        
+    
+
+}
+@media(min-width:1366px){
+    main .container{
+        max-width: 1200px;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .content{
+        max-width: 1200px;
+        width: 80%;
+    }
+    .imagem{
+        background-image: url(../img/Surf.jpg);
+        height: 350px;
+    }
+    .imagem h2{
+        text-align: center;
+        padding: 10em;
+    }
+    .Indicacoes h3{
+        text-align: end;
+    }
+    .Recomendacoes div img{
+        width: 39.5%;
+    }
+    .Para_Cadastro{
+        margin-top: 20px;
+    }
+    
+}
