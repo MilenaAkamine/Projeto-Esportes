@@ -1,123 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <script src="https://kit.fontawesome.com/bd368fed0b.js" crossorigin="anonymous"></script>
+    <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bd368fed0b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <div>
                 <a href="#" onclick="botaoMenu()">
                     <i class="fas fa-bars"></i>
                 </a>
-
             </div>
             <img src="img/Logo.png" alt="Logo do Radical Flat">
-            <nav id="menu">
+            <nav id="menu" class="menuu">
                 <ul>
-                    <li><a href="home.html".html">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="#">Sobre</a></li>
-                    <li><a href="Cadastre-se.html">Cadastrar-se</a></li>
-                    <li><a href="Locais.html">Locais</a></li>
-                    <li><a href="Comunidade.html">Comunidade</a></li>
+                    <li><a href="#">Cadastrar-se</a></li>
+                    <li><a href="Locais.index">Locais</a></li>
+                    <li><a href="#">Comunidade</a></li>
                 </ul>
-
             </nav>
             <i class="fas fa-search"></i>
-
         </div>
 
     </header>
 
     <main>
-        <div class="topo">
-            <h1> Encontre seu local
-                <img src="img/64673.png" alt="">
-            </h1>
-        </div>
-        <div class="selecione">
-
-            <label for="Esportes">Selecione seu Esporte:</label>
-            <select name="Esportes" id="Esportes">
-                <option value="Surf">Surf</option>
-                <option value="Skate">Skate</option>
-                <option value="Parkour">Parkour</option>
-                <option value="Rapel">Rapel</option>
-                <option value="Paintball">Paintball</option>
-            </select>
-        </div>
-
-  
-        <div class="localiza">
-            <img src="img/25217806.jpg" alt="">
-
-
-
-            <div>
-
-
-                <h2>Endereço: Rua Marechal Deodoro </h2>
-                <h2> Horário de funcionamento : 12:00 ás 17:00</h2>
-            </div>
-
-
-        </div>
-        <div class="localiza">
-            <img src="img/25217806.jpg" alt="">
-
-
-
-            <div>
-
-
-                <h2>Endereço: Rua Marechal Deodoro </h2>
-                <h2> Horário de funcionamento : 12:00 ás 17:00</h2>
-            </div>
-
-
-        </div>
-        <div class="localiza">
-            <img src="img/25217806.jpg" alt="">
-
-
-
-            <div>
-
-
-                <h2>Endereço: Rua Marechal Deodoro </h2>
-                <h2> Horário de funcionamento : 12:00 ás 17:00</h2>
-            </div>
-
-
-        </div>
-
+        <h1 class="login">LOGIN</h1>
+        <form class="formulario">
+            <div class="form1">
+                <div class="nome">
+                    <p><label for="Nome"> Nome: </label><input type="text" name="nome" id="Nome" size="20"
+                            placeholder="Digite Aqui" style="height:20px"></p>
+                </div>
+                <div class="senha">
+                    <p><label for="senha"> Senha:</label> <input type="password" name="senha" id="senha" size="20"
+                            placeholder="Digite Aqui" style="height:20px"></p>
+                </div>
+        </form>
+        <a href="#">
+            <button class="botao">
+                LOGIN
+            </button>
+        </a>
     </main>
+
     <footer>
         <div class="container">
             <div class="Inicio">
-
                 <img src="img/Logo.png" alt="Logo Radical Flat">
                 <a>Gmail:RadicalFlat@gmail.com</a>
-
-
             </div>
             <div class="meio">
                 <p>Tel: 11 96544-9874</p>
             </div>
-
             <div>
                 <form action="" method="get">
-                    <div>
+                    <div class="email">
                         <input type="email" id="email" name="email_usuario">
                         <button type="submit" class="botão">ENVIAR</button>
                     </div>
-
                 </form>
                 <div class="sociais">
                     <i class="fab fa-facebook-square"></i>
@@ -126,14 +76,13 @@
                     <i class="fab fa-youtube-square"></i>
                 </div>
             </div>
-
-
-
         </div>
         <p>® COPYRIGHT - Todos os direitos reservados - SENAI de Informática</p>
-
-
     </footer>
+
+
+
+
     <script>
         function botaoMenu() {
             var m = document.getElementById("menu");
@@ -144,8 +93,6 @@
             }
         }
     </script>
-
-    
 
 
 </body>
