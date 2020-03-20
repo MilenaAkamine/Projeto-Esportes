@@ -9,17 +9,17 @@
 
 }
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,
-    var(--Black);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /*Header e Footer Comeco*/
 header{
     background-color: var(--Yellow);
 }
 .container{
+    max-width: 460px;
     width: 80%;
     margin: 0 auto;
-    max-width: 460px;
+
 }
 header .fa-bars{
     color: var(--purple);
@@ -60,6 +60,7 @@ header .container img{
     padding: 0.5em 0;
     display: block;
     text-decoration: none;
+    color: black;
     
 }
 
@@ -130,7 +131,7 @@ footer p{
 @media(min-width:800px){
     .container{
         max-width: 800px;
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
     }
     header .fa-bars{
@@ -188,6 +189,7 @@ footer p{
         
 }
 /*header e footer completo*/
+
 main{
     background-color: #b4b4b4cb;
 }
@@ -196,21 +198,27 @@ main .container{
     flex-direction: column;
     max-width: 460px;
     width: 80%;
+    margin: 0 auto;
 }
 .imagem{
     background-image: url(../img/sunlight-snow-winter-snowboard-mountains-hd-1080P-wallpaper.jpg);
     height: 200px;
 }
 .imagem h2{
-    padding: 4em 0;
+    padding: 5em 0;
+    font-size: 25px;
+}
+#myCarousel{
+    margin-top: 20px;
+    background-color: black;
 }
 .item{
     text-align: center;
-    color: black;
-    text-decoration: black;
+    text-decoration: var(--white);
+    
 }
 .item a{
-    color: var(--Black);
+    color: var(--white);
 }
 main .container img{
     width: 40px;
@@ -221,7 +229,7 @@ main .container img{
     align-self:center ;
     
 }
-main .container section .card img{
+.card img{
     width: 40%;
     height: 40%;
 }
@@ -243,6 +251,44 @@ main .container section .card img{
 .yellow{
     color: var(--Yellow);
 }
-.card1{
-    display: none;
+.noticias, .Indicacoes{
+    padding: 0em 0em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+
+@media(min-width:800px){
+    
+    main .container{
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction:column;
+    }
+    .imagem{
+        background-image: url(../img/Paraquedas.jpg);
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+    .Recomendacoes div img{
+        width: 55%;
+        
+    }
+        
+    
+
 }
