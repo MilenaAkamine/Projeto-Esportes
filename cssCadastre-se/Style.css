@@ -226,7 +226,7 @@
     line-height: normal;
   }
   
-  @media (min-width:460px){
+  @media (min-width:461px){
     
   main h1{
         font-size: 40px;
@@ -292,7 +292,7 @@
   
   
   
-  @media(min-width: 460px){
+  @media(min-width: 461px){
   
     main{
       background-image: url("../img/esquiando.png");
@@ -345,7 +345,7 @@
   }
   }
   
-  @media(min-width: 800px){
+  @media(min-width: 870px){
   main{
     background-image: url("../img/Escalando.jpg");
       height: 790px;
