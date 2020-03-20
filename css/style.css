@@ -284,11 +284,47 @@ main .container img{
         margin: 0 auto;
     
     }
+    .Indicacoes h3{
+        text-align: end;
+    }
     .Recomendacoes div img{
         width: 55%;
         
     }
+    .Para_Cadastro{
+        margin-top: 20px;
+    }
         
     
 
+}
+@media(min-width:1366px){
+    main .container{
+        max-width: 1200px;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .content{
+        max-width: 1200px;
+        width: 80%;
+    }
+    .imagem{
+        background-image: url(../img/Surf.jpg);
+        height: 350px;
+    }
+    .imagem h2{
+        text-align: center;
+        padding: 10em;
+    }
+    .Indicacoes h3{
+        text-align: end;
+    }
+    .Recomendacoes div img{
+        width: 39.5%;
+    }
+    .Para_Cadastro{
+        margin-top: 20px;
+    }
+    
 }
